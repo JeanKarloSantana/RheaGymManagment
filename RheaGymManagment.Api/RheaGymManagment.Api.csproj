@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RheaGymManagment.Web.ServiceDefaults\RheaGymManagment.Web.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\RheaGymManagment.Application\RheaGymManagment.Application.csproj" />
   </ItemGroup>
 
 </Project>
