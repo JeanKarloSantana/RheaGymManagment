@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Api", "RheaGymManagment.Api\RheaGymManagment.Api.csproj", "{5B0240FA-AE17-44CC-9A54-9B853CD77490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Web.AppHost", "RheaGymManagment.Web.AppHost\RheaGymManagment.Web.AppHost.csproj", "{AC61E094-4C1B-408C-A1CA-A9BAB9B369E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Web.ServiceDefaults", "RheaGymManagment.Web.ServiceDefaults\RheaGymManagment.Web.ServiceDefaults.csproj", "{FCCDB4EF-02A3-4AD9-A27D-6B0D5761BB33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Application", "RheaGymManagment.Application\RheaGymManagment.Application.csproj", "{0C830019-9901-4E3D-864F-1C87956D895C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Domain", "RheaGymManagment.Domain\RheaGymManagment.Domain.csproj", "{C0686D14-AFE5-4E74-9855-D6B13F8532FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Infrastructure", "RheaGymManagment.Infrastructure\RheaGymManagment.Infrastructure.csproj", "{908D67EB-71BD-45DF-9A98-1A21987A2B85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B0240FA-AE17-44CC-9A54-9B853CD77490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0240FA-AE17-44CC-9A54-9B853CD77490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0240FA-AE17-44CC-9A54-9B853CD77490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0240FA-AE17-44CC-9A54-9B853CD77490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC61E094-4C1B-408C-A1CA-A9BAB9B369E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC61E094-4C1B-408C-A1CA-A9BAB9B369E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC61E094-4C1B-408C-A1CA-A9BAB9B369E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC61E094-4C1B-408C-A1CA-A9BAB9B369E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCCDB4EF-02A3-4AD9-A27D-6B0D5761BB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCDB4EF-02A3-4AD9-A27D-6B0D5761BB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCDB4EF-02A3-4AD9-A27D-6B0D5761BB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCDB4EF-02A3-4AD9-A27D-6B0D5761BB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C830019-9901-4E3D-864F-1C87956D895C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C830019-9901-4E3D-864F-1C87956D895C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C830019-9901-4E3D-864F-1C87956D895C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C830019-9901-4E3D-864F-1C87956D895C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0686D14-AFE5-4E74-9855-D6B13F8532FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0686D14-AFE5-4E74-9855-D6B13F8532FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0686D14-AFE5-4E74-9855-D6B13F8532FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0686D14-AFE5-4E74-9855-D6B13F8532FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

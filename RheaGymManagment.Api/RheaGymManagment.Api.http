@@ -1,0 +1,6 @@
+@RheaGymManagment.Api_HostAddress = http://localhost:5119
+
+GET {{RheaGymManagment.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
