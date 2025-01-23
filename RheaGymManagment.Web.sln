@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Domain", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Infrastructure", "RheaGymManagment.Infrastructure\RheaGymManagment.Infrastructure.csproj", "{908D67EB-71BD-45DF-9A98-1A21987A2B85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RheaGymManagment.Contracts", "RheaGymManagment.Contracts\RheaGymManagment.Contracts.csproj", "{93334230-35B1-46D4-98A9-4D97C8756FE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{908D67EB-71BD-45DF-9A98-1A21987A2B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93334230-35B1-46D4-98A9-4D97C8756FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93334230-35B1-46D4-98A9-4D97C8756FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93334230-35B1-46D4-98A9-4D97C8756FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93334230-35B1-46D4-98A9-4D97C8756FE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
