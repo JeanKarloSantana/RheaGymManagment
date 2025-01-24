@@ -1,6 +1,5 @@
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using RheaGymManagment.Application;
-using RheaGymManagment.Application.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

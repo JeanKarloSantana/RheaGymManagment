@@ -1,26 +1,34 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using RheaGymManagment.Application.Services;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using RheaGymManagment.Application.Commands.CreateSubscription;
 using Titan.Contracts.Subscriptions;
 
 namespace RheaGymManagment.Api.Controllers
 {
     public class SubscriptionController : ControllerBase
-    {
-        private readonly ISubscriptionService _subscriptionsService;
+    { 
+        private readonly ISender _mediator;
 
-        public SubscriptionController(ISubscriptionService subscriptionsService)
+        public SubscriptionController(ISender mediator)
         {
-            _subscriptionsService = subscriptionsService;
+            _mediator = mediator;
         }
 
-        public IActionResult CreateSubscription(CreateSubscriptionRequest request)
+        public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
         {
-           var subscriptionId = _subscriptionsService.CreateSubscription(
+            var command = new CreateSubscriptionCommand(
                 request.SubscriptionType.ToString(), 
                 request.AdminId);
 
+            var createSubscriptionResult = await _mediator.Send(command);
+
+            if(createSubscriptionResult.IsError)
+            {
+                return Problem();
+            }
+
            var response = new SubscriptionResponse(
-                subscriptionId,
+                createSubscriptionResult.Value,
                 request.SubscriptionType);
 
             return Ok(response);

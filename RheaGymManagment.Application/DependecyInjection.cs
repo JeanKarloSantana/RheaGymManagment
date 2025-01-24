@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using RheaGymManagment.Application.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +11,10 @@ namespace RheaGymManagment.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<ISubscriptionService, SubscriptionService>();
+            services.AddMediatR(options =>
+            {
+                options.RegisterServicesFromAssemblyContaining(typeof(DependecyInjection));
+            });
 
             return services;
         }
