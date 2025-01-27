@@ -10,5 +10,6 @@ namespace RheaGymManagment.Application.Commons.interfaces
     public interface ISubscriptionRepository
     {
        Task AddSubscriptionAsync(Subscription subscription);
+       Task<Subscription?> GetByIdAsync(Guid subcriptionId);
     }
 }

@@ -26,6 +26,7 @@ namespace RheaGymManagment.Application.Subscriptions.Commands
             var subscription = new Subscription
             {
                 Id = Guid.NewGuid(),
+                SubscriptionType = request.SubscriptionType
             };
 
             await _subscriptionRepository.AddSubscriptionAsync(subscription);
