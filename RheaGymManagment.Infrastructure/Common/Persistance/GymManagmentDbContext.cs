@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RheaGymManagment.Application.Commons.interfaces;
 using RheaGymManagment.Domain.Subscriptions;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,17 @@ using System.Threading.Tasks;
 
 namespace RheaGymManagment.Infrastructure.Common.Persistance
 {
-    public class GymManagmentDbContext : DbContext
+    public class GymManagmentDbContext : DbContext, IUnitOfWork
     {
         public DbSet<Subscription> Subscriptions { get; set; } = null!;
 
         public GymManagmentDbContext(DbContextOptions options) : base(options)
         {           
+        }
+
+        public async Task CommitChangesAsync()
+        {
+           await base.SaveChangesAsync();
         }
     }
 }

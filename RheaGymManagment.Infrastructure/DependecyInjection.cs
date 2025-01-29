@@ -13,7 +13,7 @@ namespace RheaGymManagment.Application
         {
             services.AddDbContext<GymManagmentDbContext>(options => options.UseSqlite("Data Source = GymManagment.db"));
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork>(serviceProvider => serviceProvider.GetRequiredService<GymManagmentDbContext>());
             return services;
         }
     }
