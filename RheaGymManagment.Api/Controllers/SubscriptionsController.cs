@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using RheaGymManagment.Application.Subscriptions.Commands;
 using RheaGymManagment.Application.Subscriptions.Queries.GetSubscription;
 using Titan.Contracts.Subscriptions;
+using DomainSubscriptionType = RheaGymManagment.Domain.Subscriptions.SubscriptionType;
 namespace RheaGymManagment.Api.Controllers;
 
 [ApiController]
@@ -19,8 +20,16 @@ public class SubscriptionController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateSubscription([FromBody] CreateSubscriptionRequest request)
     {
+
+       if(DomainSubscriptionType.TryFromName(
+           request.SubscriptionType.ToString(), 
+           out var subscriptionType))
+        {
+            return Problem(statusCode: StatusCodes.Status400BadRequest, detail: "Invalid subscription type");
+        }
+
         var command = new CreateSubscriptionCommand(
-            request.SubscriptionType.ToString(),
+            subscriptionType,
             request.AdminId);
 
         var createSubscriptionResult = await _mediator.Send(command);
@@ -38,9 +47,9 @@ public class SubscriptionController : ControllerBase
         var getSubscriptionResult = await _mediator.Send(query);
 
         return getSubscriptionResult.MatchFirst(
-            SubscriptionController => Ok(new SubscriptionResponse(
-                SubscriptionController.Id,
-                SubscriptionType.Pro)),
+            subscription => Ok(new SubscriptionResponse(
+               subscription.Id,
+                Enum.Parse<SubscriptionType>(subscription.SubscriptionType.Name))),
             error => Problem());
     }
 }
