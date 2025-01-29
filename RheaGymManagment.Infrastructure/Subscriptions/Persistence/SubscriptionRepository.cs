@@ -1,4 +1,5 @@
-﻿using RheaGymManagment.Application.Commons.interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using RheaGymManagment.Application.Commons.interfaces;
 using RheaGymManagment.Domain.Subscriptions;
 using RheaGymManagment.Infrastructure.Common.Persistance;
 using System;
@@ -12,6 +13,12 @@ namespace RheaGymManagment.Infrastructure.Subscriptions.Persistence
     public class SubscriptionRepository : ISubscriptionRepository
     {
         private readonly GymManagmentDbContext _dbContext;
+
+        public SubscriptionRepository(GymManagmentDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         public async Task AddSubscriptionAsync(Subscription subscription)
         {
             await _dbContext.Subscriptions.AddAsync(subscription);
