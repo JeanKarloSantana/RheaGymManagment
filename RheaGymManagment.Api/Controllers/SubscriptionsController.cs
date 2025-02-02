@@ -21,7 +21,7 @@ public class SubscriptionController : ControllerBase
     public async Task<IActionResult> CreateSubscription([FromBody] CreateSubscriptionRequest request)
     {
 
-       if(DomainSubscriptionType.TryFromName(
+       if(!DomainSubscriptionType.TryFromName(
            request.SubscriptionType.ToString(), 
            out var subscriptionType))
         {
