@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RheaGymManagment.Application.Subscriptions.Commands
+namespace RheaGymManagment.Application.Subscriptions.Commands.CreateSubscription
 {
     public record CreateSubscriptionCommand(SubscriptionType SubscriptionType, Guid AdminId) : IRequest<ErrorOr<Subscription>>;
 }

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RheaGymManagment.Application.Subscriptions.Commands
+namespace RheaGymManagment.Application.Subscriptions.Commands.CreateSubscription
 {
     public class CreateSubscriptionCommandHandler : IRequestHandler<CreateSubscriptionCommand, ErrorOr<Subscription>>
     {

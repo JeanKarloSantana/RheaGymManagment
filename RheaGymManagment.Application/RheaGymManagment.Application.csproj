@@ -9,6 +9,10 @@
     <ProjectReference Include="..\RheaGymManagment.Domain\RheaGymManagment.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Subscriptions\Commands\DeleteSubscription\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
