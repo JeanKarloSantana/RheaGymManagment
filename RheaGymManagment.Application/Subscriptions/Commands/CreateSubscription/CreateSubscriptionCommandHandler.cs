@@ -1,4 +1,5 @@
-﻿using ErrorOr;
+﻿
+using ErrorOr;
 using GymManagement.Application.Common.Interfaces;
 using MediatR;
 using RheaGymManagment.Application.Commons.interfaces;

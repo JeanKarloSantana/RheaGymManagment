@@ -1,9 +1,9 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Rooms;
 using MediatR;
+using RheaGymManagment.Application.Commons.interfaces;
 
-namespace GymManagement.Application.Rooms.Commands.CreateRoom;
+namespace RheaGymManagment.Application.Rooms.Commands.CreateRoom;
 
 public class CreateRoomCommandHandler : IRequestHandler<CreateRoomCommand, ErrorOr<Room>>
 {

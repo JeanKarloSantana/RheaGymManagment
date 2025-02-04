@@ -1,9 +1,9 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Gyms;
 using MediatR;
+using RheaGymManagment.Application.Commons.interfaces;
+using RheaGymManagment.Domain.Gyms;
 
-namespace GymManagement.Application.Gyms.Commands.AddTrainer;
+namespace RheaGymManagment.Application.Gyms.Commands.AddTrainer;
 
 public class AddTrainerCommandHandler : IRequestHandler<AddTrainerCommand, ErrorOr<Success>>
 {

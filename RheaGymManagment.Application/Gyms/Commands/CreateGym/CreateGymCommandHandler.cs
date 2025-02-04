@@ -1,10 +1,11 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Gyms;
+using GymManagement.Application.Gyms.Commands.CreateGym;
 using MediatR;
+using RheaGymManagment.Application.Commons.interfaces;
+using RheaGymManagment.Domain.Gyms;
 
 
-namespace GymManagement.Application.Gyms.Commands.CreateGym;
+namespace RheaGymManagment.Application.Gyms.Commands.CreateGym;
 
 public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr<Gym>>
 {
