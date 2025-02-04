@@ -1,6 +1,7 @@
 using ErrorOr;
-using GymManagement.Domain.Rooms;
+
 using MediatR;
+using RheaGymManagment.Domain.Rooms;
 
 namespace RheaGymManagment.Application.Rooms.Commands.CreateRoom;
 

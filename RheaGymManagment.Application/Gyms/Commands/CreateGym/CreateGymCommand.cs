@@ -1,7 +1,7 @@
 using ErrorOr;
-using GymManagement.Domain.Gyms;
 using MediatR;
+using RheaGymManagment.Domain.Gyms;
 
-namespace GymManagement.Application.Gyms.Commands.CreateGym;
+namespace RheaGymManagment.Application.Gyms.Commands.CreateGym;
 
 public record CreateGymCommand(string Name, Guid SubscriptionId) : IRequest<ErrorOr<Gym>>;

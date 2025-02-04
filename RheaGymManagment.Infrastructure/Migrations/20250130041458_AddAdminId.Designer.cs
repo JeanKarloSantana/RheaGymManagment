@@ -10,7 +10,7 @@ using RheaGymManagment.Infrastructure.Common.Persistance;
 
 namespace RheaGymManagment.Infrastructure.Migrations
 {
-    [DbContext(typeof(GymManagmentDbContext))]
+    [DbContext(typeof(GymManagementDbContext))]
     [Migration("20250130041458_AddAdminId")]
     partial class AddAdminId
     {

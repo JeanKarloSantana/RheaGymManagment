@@ -1,7 +1,7 @@
 using ErrorOr;
-using GymManagement.Domain.Gyms;
 using MediatR;
+using RheaGymManagment.Domain.Gyms;
 
-namespace GymManagement.Application.Gyms.Queries.GetGym;
+namespace RheaGymManagment.Application.Gyms.Queries.GetGym;
 
 public record GetGymQuery(Guid SubscriptionId, Guid GymId) : IRequest<ErrorOr<Gym>>;

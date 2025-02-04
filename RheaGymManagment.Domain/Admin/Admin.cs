@@ -1,6 +1,6 @@
 using RheaGymManagment.Domain.Subscriptions;
 using Throw;
-namespace GymManagement.Domain.Admins;
+namespace RheaGymManagment.Domain.Admin;
 
 public class Admin
 {

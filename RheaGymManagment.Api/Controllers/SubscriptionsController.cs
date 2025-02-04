@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RheaGymManagment.Application.Subscriptions.Commands;
+using RheaGymManagment.Application.Subscriptions.Commands.CreateSubscription;
+using RheaGymManagment.Application.Subscriptions.Commands.DeleteSubscription;
 using RheaGymManagment.Application.Subscriptions.Queries.GetSubscription;
 using RheaGymManagment.Contracts.Subscriptions;
 using DomainSubscriptionType = RheaGymManagment.Domain.Subscriptions.SubscriptionType;

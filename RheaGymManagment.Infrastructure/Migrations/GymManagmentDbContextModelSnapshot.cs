@@ -9,7 +9,7 @@ using RheaGymManagment.Infrastructure.Common.Persistance;
 
 namespace RheaGymManagment.Infrastructure.Migrations
 {
-    [DbContext(typeof(GymManagmentDbContext))]
+    [DbContext(typeof(GymManagementDbContext))]
     partial class GymManagmentDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

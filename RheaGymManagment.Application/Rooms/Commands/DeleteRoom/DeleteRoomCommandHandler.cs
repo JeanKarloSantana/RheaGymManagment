@@ -1,6 +1,7 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
 using MediatR;
+using RheaGymManagment.Application.Commons.interfaces;
+using RheaGymManagment.Application.Rooms.Commands.DeleteRoom;
 using Throw;
 
 namespace GymManagement.Application.Rooms.Commands.DeleteRoom;

@@ -1,5 +1,4 @@
 using ErrorOr;
-using GymManagement.Application.Gyms.Commands.CreateGym;
 using MediatR;
 using RheaGymManagment.Application.Commons.interfaces;
 using RheaGymManagment.Domain.Gyms;

@@ -1,5 +1,6 @@
 using ErrorOr;
 using MediatR;
+using RheaGymManagment.Application.Commons.interfaces;
 
 namespace RheaGymManagment.Application.Subscriptions.Commands.DeleteSubscription;
 

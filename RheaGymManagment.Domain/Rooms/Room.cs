@@ -1,4 +1,4 @@
-namespace GymManagement.Domain.Rooms;
+namespace RheaGymManagment.Domain.Rooms;
 
 public class Room
 {

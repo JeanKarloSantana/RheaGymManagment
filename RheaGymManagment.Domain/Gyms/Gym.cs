@@ -1,6 +1,5 @@
 using ErrorOr;
-using GymManagement.Domain.Gyms;
-using GymManagement.Domain.Rooms;
+using RheaGymManagment.Domain.Rooms;
 using Throw;
 
 namespace RheaGymManagment.Domain.Gyms;

@@ -1,8 +1,8 @@
 using ErrorOr;
-using GymManagement.Application.Common.Interfaces;
 using MediatR;
+using RheaGymManagment.Application.Commons.interfaces;
 
-namespace GymManagement.Application.Gyms.Commands.DeleteGym;
+namespace RheaGymManagment.Application.Gyms.Commands.DeleteGym;
 
 public class DeleteGymCommandHandler : IRequestHandler<DeleteGymCommand, ErrorOr<Deleted>>
 {

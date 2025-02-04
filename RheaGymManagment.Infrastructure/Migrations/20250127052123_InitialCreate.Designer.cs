@@ -3,14 +3,13 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RheaGymManagment.Infrastructure.Common.Persistance;
 
 #nullable disable
 
 namespace RheaGymManagment.Infrastructure.Migrations
 {
-    [DbContext(typeof(GymManagmentDbContext))]
+    [DbContext(typeof(GymManagementDbContext))]
     [Migration("20250127052123_InitialCreate")]
     partial class InitialCreate
     {

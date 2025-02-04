@@ -1,6 +1,6 @@
-using GymManagement.Domain.Admins;
+using RheaGymManagment.Domain.Admin;
 
-namespace GymManagement.Application.Common.Interfaces;
+namespace RheaGymManagment.Application.Commons.interfaces;
 
 public interface IAdminsRepository
 {
