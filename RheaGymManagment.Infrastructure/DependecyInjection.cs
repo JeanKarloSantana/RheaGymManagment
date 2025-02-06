@@ -1,8 +1,10 @@
 ﻿
+using GymManagement.Infrastructure.Admins.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RheaGymManagment.Application.Commons.interfaces;
 using RheaGymManagment.Infrastructure.Common.Persistance;
+using RheaGymManagment.Infrastructure.Gyms.Persistence;
 using RheaGymManagment.Infrastructure.Subscriptions.Persistence;
 
 namespace RheaGymManagment.Application
@@ -12,6 +14,8 @@ namespace RheaGymManagment.Application
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
             services.AddDbContext<GymManagementDbContext>(options => options.UseSqlite("Data Source = GymManagment.db"));
+            services.AddScoped<IAdminsRepository, AdminsRepository>();
+            services.AddScoped<IGymsRepository, GymsRepository>();
             services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
             services.AddScoped<IUnitOfWork>(serviceProvider => serviceProvider.GetRequiredService<GymManagementDbContext>());
             return services;
