@@ -65,15 +65,4 @@ public class SubscriptionController : ControllerBase
             _ => NoContent(),
             _ => Problem());
     }
-
-    private static SubscriptionType ToDto(DomainSubscriptionType subscriptionType)
-    {
-        return subscriptionType.Name switch
-        {
-            nameof(DomainSubscriptionType.Free) => SubscriptionType.Free,
-            nameof(DomainSubscriptionType.Starter) => SubscriptionType.Starter,
-            nameof(DomainSubscriptionType.Pro) => SubscriptionType.Pro,
-            _ => throw new InvalidOperationException(),
-        };
-    }
 }
