@@ -21,6 +21,6 @@ POST {{host}}/subscriptions/95D139E3-924D-45BE-887F-3A4C74CA5497/gyms
 Content-Type: application/json
 
 {
-  "name": "Bull Builder",
+  "name": "Bu",
   "subscriptionId": "95D139E3-924D-45BE-887F-3A4C74CA5497"
 }

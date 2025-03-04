@@ -23,16 +23,7 @@ public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr
     }
 
     public async Task<ErrorOr<Gym>> Handle(CreateGymCommand command, CancellationToken cancellationToken)
-    {
-        var validator = new CreateGymCommandValidator();
-
-        var validationResult = await validator.ValidateAsync(command);
-
-        if (validationResult.IsValid)
-        {
-
-        }
-        
+    {       
         var subscription = await _subscriptionsRepository.GetByIdAsync(command.SubscriptionId);
 
         if (subscription is null)
