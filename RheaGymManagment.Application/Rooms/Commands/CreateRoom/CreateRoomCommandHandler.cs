@@ -7,12 +7,12 @@ namespace RheaGymManagment.Application.Rooms.Commands.CreateRoom;
 
 public class CreateRoomCommandHandler : IRequestHandler<CreateRoomCommand, ErrorOr<Room>>
 {
-    private readonly ISubscriptionsRepository _subscriptionsRepository;
+    private readonly IGymRepository _subscriptionsRepository;
     private readonly IGymsRepository _gymsRepository;
     private readonly IUnitOfWork _unitOfWork;
 
     public CreateRoomCommandHandler(
-        ISubscriptionsRepository subscriptionsRepository,
+        IGymRepository subscriptionsRepository,
         IGymsRepository gymsRepository,
         IUnitOfWork unitOfWork)
     {

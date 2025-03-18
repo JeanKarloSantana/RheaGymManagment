@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RheaGymManagment.Domain.Common
 {
-    public interface IDomainEvent : INotification
+    public interface IDomainEvent : INotification;
     {
     }
 }

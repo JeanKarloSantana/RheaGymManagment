@@ -16,7 +16,7 @@ namespace RheaGymManagment.Application
             services.AddDbContext<GymManagementDbContext>(options => options.UseSqlite("Data Source = GymManagment.db"));
             services.AddScoped<IAdminsRepository, AdminsRepository>();
             services.AddScoped<IGymsRepository, GymsRepository>();
-            services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
+            services.AddScoped<IGymRepository, SubscriptionsRepository>();
             services.AddScoped<IUnitOfWork>(serviceProvider => serviceProvider.GetRequiredService<GymManagementDbContext>());
             return services;
         }

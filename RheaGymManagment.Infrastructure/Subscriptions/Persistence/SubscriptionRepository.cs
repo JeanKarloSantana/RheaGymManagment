@@ -5,7 +5,7 @@ using RheaGymManagment.Infrastructure.Common.Persistance;
 
 namespace RheaGymManagment.Infrastructure.Subscriptions.Persistence;
 
-public class SubscriptionsRepository : ISubscriptionsRepository
+public class SubscriptionsRepository : IGymRepository
 {
     private readonly GymManagementDbContext _dbContext;
 

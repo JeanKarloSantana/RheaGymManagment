@@ -9,10 +9,10 @@ namespace GymManagement.Application.Rooms.Commands.DeleteRoom;
 public class DeleteRoomCommandHandler : IRequestHandler<DeleteRoomCommand, ErrorOr<Deleted>>
 {
     private readonly IGymsRepository _gymsRepository;
-    private readonly ISubscriptionsRepository _subscriptionsRepository;
+    private readonly IGymRepository _subscriptionsRepository;
     private readonly IUnitOfWork _unitOfWork;
 
-    public DeleteRoomCommandHandler(IGymsRepository gymsRepository, ISubscriptionsRepository subscriptionsRepository, IUnitOfWork unitOfWork)
+    public DeleteRoomCommandHandler(IGymsRepository gymsRepository, IGymRepository subscriptionsRepository, IUnitOfWork unitOfWork)
     {
         _gymsRepository = gymsRepository;
         _subscriptionsRepository = subscriptionsRepository;

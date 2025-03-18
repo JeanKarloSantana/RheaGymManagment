@@ -13,11 +13,11 @@ namespace RheaGymManagment.Application.Subscriptions.Commands.CreateSubscription
 {
     public class CreateSubscriptionCommandHandler : IRequestHandler<CreateSubscriptionCommand, ErrorOr<Subscription>>
     {
-        private readonly ISubscriptionsRepository _subscriptionsRepository;
+        private readonly IGymRepository _subscriptionsRepository;
         private readonly IAdminsRepository _adminsRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public CreateSubscriptionCommandHandler(ISubscriptionsRepository subscriptionsRepository, IUnitOfWork unitOfWork, IAdminsRepository adminsRepository)
+        public CreateSubscriptionCommandHandler(IGymRepository subscriptionsRepository, IUnitOfWork unitOfWork, IAdminsRepository adminsRepository)
         {
             _subscriptionsRepository = subscriptionsRepository;
             _unitOfWork = unitOfWork;

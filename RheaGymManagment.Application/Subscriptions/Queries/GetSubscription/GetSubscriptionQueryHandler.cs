@@ -11,9 +11,9 @@ namespace RheaGymManagment.Application.Subscriptions.Queries.GetSubscription
 {
     public class GetSubscriptionQueryHandler
     {
-        private readonly ISubscriptionsRepository _subscriptionRepository;
+        private readonly IGymRepository _subscriptionRepository;
 
-        public GetSubscriptionQueryHandler(ISubscriptionsRepository subscriptionRepository)
+        public GetSubscriptionQueryHandler(IGymRepository subscriptionRepository)
         {
             _subscriptionRepository = subscriptionRepository;
         }   

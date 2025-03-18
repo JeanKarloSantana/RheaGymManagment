@@ -10,7 +10,7 @@ namespace RheaGymManagment.Domain.Common
     {
         public Guid Id { get; init; }
 
-        private readonly List<IDomainEvent> _domainEvents = [];
+        protected readonly List<IDomainEvent> _domainEvents = [];
 
         protected Entity(Guid id) => Id = id;
 

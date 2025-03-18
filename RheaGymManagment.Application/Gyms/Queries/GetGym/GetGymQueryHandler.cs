@@ -8,9 +8,9 @@ namespace RheaGymManagment.Application.Gyms.Queries.GetGym;
 public class GetGymQueryHandler : IRequestHandler<GetGymQuery, ErrorOr<Gym>>
 {
     private readonly IGymsRepository _gymsRepository;
-    private readonly ISubscriptionsRepository _subscriptionsRepository;
+    private readonly IGymRepository _subscriptionsRepository;
 
-    public GetGymQueryHandler(IGymsRepository gymsRepository, ISubscriptionsRepository subscriptionsRepository)
+    public GetGymQueryHandler(IGymsRepository gymsRepository, IGymRepository subscriptionsRepository)
     {
         _gymsRepository = gymsRepository;
         _subscriptionsRepository = subscriptionsRepository;

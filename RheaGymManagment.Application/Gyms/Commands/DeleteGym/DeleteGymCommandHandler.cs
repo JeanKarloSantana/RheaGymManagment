@@ -6,12 +6,12 @@ namespace RheaGymManagment.Application.Gyms.Commands.DeleteGym;
 
 public class DeleteGymCommandHandler : IRequestHandler<DeleteGymCommand, ErrorOr<Deleted>>
 {
-    private readonly ISubscriptionsRepository _subscriptionsRepository;
+    private readonly IGymRepository _subscriptionsRepository;
     private readonly IGymsRepository _gymsRepository;
     private readonly IUnitOfWork _unitOfWork;
 
     public DeleteGymCommandHandler(
-        ISubscriptionsRepository subscriptionsRepository,
+        IGymRepository subscriptionsRepository,
         IGymsRepository gymsRepository,
         IUnitOfWork unitOfWork)
     {

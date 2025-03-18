@@ -8,12 +8,12 @@ namespace RheaGymManagment.Application.Gyms.Commands.CreateGym;
 
 public class CreateGymCommandHandler : IRequestHandler<CreateGymCommand, ErrorOr<Gym>>
 {
-    private readonly ISubscriptionsRepository _subscriptionsRepository;
+    private readonly IGymRepository _subscriptionsRepository;
     private readonly IGymsRepository _gymsRepository;
     private readonly IUnitOfWork _unitOfWork;
 
     public CreateGymCommandHandler(
-        ISubscriptionsRepository subscriptionsRepository,
+        IGymRepository subscriptionsRepository,
         IGymsRepository gymsRepository,
         IUnitOfWork unitOfWork)
     {
